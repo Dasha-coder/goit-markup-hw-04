@@ -53,6 +53,12 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+
+}
+
+.header-container,
+.navigation-list,
+.connection {
     display: flex;
     align-items: center;
 }
@@ -108,13 +114,6 @@ ul {
 
 }
 
-.navigation-list,
-.connection {
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-
-}
 
 .main-nav {
     margin-right: auto;
@@ -281,17 +280,16 @@ ul {
 }
 
 .thumb {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--light-bg-cl);
-    padding-top: 25px;
-    padding-bottom: 25px;
+    height: 120px;
     margin-bottom: 30px;
 }
 
 .criteria-icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
     width: 70px;
     height: 70px;
 }
@@ -328,9 +326,6 @@ ul {
     background-color: var(--light-bg-cl);
 }
 
-.team-subtitle {
-    margin-top: 30px;
-}
 
 .team-item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -338,16 +333,24 @@ ul {
 
 }
 
+.team-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .team-subtitle {
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
     letter-spacing: 0.03em;
+
 }
 
 .team-desk {
-    margin-top: 10px;
+
     margin-bottom: 16px;
 }
 
@@ -363,9 +366,7 @@ ul {
     list-style: none;
     display: flex;
     gap: 10px;
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-bottom: 30px;
+    justify-content: center;
 
 }
 
@@ -378,11 +379,13 @@ ul {
 
 
 .social-link {
-    display: block;
-    height: 44px;
-    width: 44px;
+    display: flex;
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
-    padding: 12px;
+    justify-content: center;
+    align-items: center;
+
 
 }
 
@@ -409,11 +412,9 @@ ul {
 
 .clients-list {
     display: flex;
-    list-style: none;
-    width: 170px;
-    height: 92px;
     gap: var(--card-set-gap);
 
+    list-style: none;
 }
 
 .clients-item {
@@ -426,10 +427,11 @@ ul {
 
 
 .client-link {
-    display: block;
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     border: 1px solid var(--social-cl);
 }
 
@@ -472,7 +474,9 @@ ul {
 }
 
 .footer-container {
+    display: flex;
     align-items: baseline;
+
 }
 
 .address,
@@ -551,18 +555,19 @@ ul {
 .porfolio-list {
 
 
-    margin-top: calc(-1 * var(--card-set-gap));
-    margin-left: calc(-1 * var(--card-set-gap));
+    /*   margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap)); */
 
     display: flex;
     flex-wrap: wrap;
+    gap: var(--card-set-gap);
 
 }
 
 .portfolio-item {
     flex-basis: calc(100% / 3 - var(--card-set-gap));
-    margin-top: var(--card-set-gap);
-    margin-left: var(--card-set-gap);
+    /*  margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap); */
 }
 
 .portfolio-link:hover,
